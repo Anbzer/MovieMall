@@ -1,0 +1,62 @@
+<!--pages/detail/detail.wxml-->
+<view class="page-box">
+
+	<view class="swiper-box">
+		<swiper bindchange="swiperChange" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<swiper-item wx:for="{{nowSwiperImg}}" wx:key="*this">
+				<image src="{{item}}"></image>
+			</swiper-item>
+		</swiper>
+		<view class="tips">
+			<text>{{current+1}}/2</text>
+		</view>
+	</view>
+
+	<view class="info">
+		<view class="price">￥{{nowPrice}}</view>
+		<view class="share-box">
+			<view class="title">{{nowTitle}} / 上市时间：{{nowPublic}}</view>
+			<button open-type="share" class="share">
+				<view class="iconfont icon-share"></view>
+			</button>
+		</view>
+	</view>
+
+	<view class="nav-box">
+		<scroll-view scroll-x="{{true}}">
+			<view class="nav">
+				<view class="item current">简介</view>
+				<view class="item">影评</view>
+				<view class="item">更多</view>
+			</view>
+		</scroll-view>
+	</view>
+	<view class='readmore'>
+		<view class='overview'>
+			<text class='content {{readmore.status ? "hidden" : ""}}'>
+				{{nowText}}
+			</text>
+			<view class='readmore-tip' bindtap='toggle'>{{readmore.tip}}</view>
+		</view>
+	</view>
+
+	<view class="bottom-nav">
+		<view class="icon" bindtap="toHome">
+			<view class="iconfont icon-home"></view>
+			<view>首页</view>
+		</view>
+		<view class="icon" bindtap="onCall">
+			<view class="iconfont icon-weixin"></view>
+			<view>咨询</view>
+		</view>
+		<view class="icon" bindtap="toCart">
+			<view class="iconfont icon-cart"></view>
+			<view>购物车</view>
+		</view>
+		<view class="addCart" bindtap="addToCart">加入购物车</view>
+		<view class="buy" bindtap="buyNow">立即购买</view>
+	</view>
+
+
+
+</view>

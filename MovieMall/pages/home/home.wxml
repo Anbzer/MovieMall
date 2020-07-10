@@ -1,0 +1,39 @@
+<view class="page-box">
+	<view class="swiper-box">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{background}}" wx:key="*this">
+				<swiper-item>
+					<image src="{{item}}" mode="widthFix"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+	<view class="nav-box">
+		<scroll-view scroll-x="{{true}}">
+			<view class="nav">
+				<view class="item current">全部</view>
+				<view class="item">动作片</view>
+				<view class="item">科幻</view>
+				<view class="item">剧情</view>
+				<view class="item">爱情</view>
+				<view class="item">奇幻冒险</view>
+				<view class="item">动画</view>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="goods-list">
+    <view class="item" wx:for="{{goodsData}}" wx:key="*this" data-id="{{item.id}}" bindtap="jumpDetail">
+      <view class="pic">
+				<image src="{{item.img}}"></image>
+			</view>
+			<view class="content">
+				<view class="title">{{item.title}}</view>
+				<view class="made">{{item.made}}</view>
+				<view class="price">￥{{item.price}}</view>
+			</view>
+    </view>
+
+	</view>
+</view>

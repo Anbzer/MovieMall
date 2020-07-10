@@ -1,0 +1,47 @@
+<!--pages/cart/cart.wxml-->
+<view class="page-box">
+	<view class="top-box">
+		<view class="left">共{{totalMovie}}件商品</view>
+		<view class="right">删除</view>
+	</view>
+
+	<view class="item-list">
+		<view class="item" wx:for="{{cartList}}" wx:key="*this">
+			<checkbox-group>
+				<checkbox value="1" checked="{{item.isChecked}}"></checkbox>
+			</checkbox-group>
+
+			<view class="pic">
+				<image src="{{item.getImg}}"></image>
+			</view>
+
+			<view class="content">
+				<view class="title">{{item.getTitle}}</view>
+				<view class="price-info">
+					<view class="price">￥{{item.getPrice}}</view>
+					<view class="oper">
+						<view class="reduce">-</view>
+						<input value="{{item.getNum}}"></input>
+						<view class="add">+</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+  <view class="total-box">
+    <view class="all">
+      <checkbox-group bindchange="checkAll">
+        <checkbox value="1" checked="{{isCheckAll}}"></checkbox>
+        <text>全选</text>
+      </checkbox-group>      
+    </view>
+
+    <view class="total-price">
+      总价：<text class="price">￥{{totalPrice}}</text>
+    </view>
+
+    <view class="btn {{totalPrice>0 ? 'btn-primary' : 'btn-default'}}">去结算</view>
+  </view>
+</view>

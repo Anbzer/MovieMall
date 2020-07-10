@@ -1,0 +1,108 @@
+/* pages/cart/cart.wxss */
+page{
+  height: 100%;
+  background: #f5f5f5;
+}
+.top-box{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #eee;
+  padding: 0 30rpx;
+  font-size: 32rpx;
+}
+.top-box .left{
+  flex: 1;
+}
+.item-list{
+  padding-bottom: 110rpx;
+}
+.item-list .item{
+  padding: 20rpx;  
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.item-list .item .pic image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.item-list .item .content{
+  margin-left: 20rpx;
+  flex: 1;
+}
+.item-list .item .content .title{
+  font-size: 32rpx;
+}
+.item-list .item .content .price-info{
+  display: flex;
+  margin-top: 30rpx;
+}
+.item-list .item .content .price-info .price{
+  width: 65%;
+  font-size: 36rpx;
+  color: orange;
+}
+.item-list .item .content .price-info .oper{
+  display: flex;
+  border: solid 2rpx #ccc;
+  border-radius: 10rpx;
+  margin-left: 180rpx;
+}
+.item-list .item .content .price-info .oper .add{
+  width: 50rpx;
+  text-align: center;
+  border-left: solid 2rpx #ccc;
+}
+.item-list .item .content .price-info .oper .reduce{
+  width: 50rpx;
+  text-align: center;
+  border-right: solid 2rpx #ccc;
+}
+.item-list .item .content .price-info .oper input{
+  width: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.total-box{
+  display: flex;
+  height: 110rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.total-box .all{
+  font-size: 34rpx;
+  width: 200rpx;
+  margin-top: 14rpx;
+}
+.total-box .total-price{
+  font-size: 34rpx;
+  flex: 1;
+}
+.total-box .total-price .price{
+  color: orange;
+  font-size: 38rpx;
+}
+.total-box .btn{
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.total-box .btn-default{
+  background: #eee;
+  color: #666;
+}
+.total-box .btn-primary{
+  background: orange;
+  color: white;
+}

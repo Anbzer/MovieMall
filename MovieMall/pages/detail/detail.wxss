@@ -1,0 +1,132 @@
+/* pages/detail/detail.wxss */
+.swiper-box{
+  position: relative;
+}
+.swiper-box swiper{
+  height: 750rpx;
+}
+.swiper-box swiper image{
+  width: 100%;
+  height: 100%;
+}
+.swiper-box .tips{
+  position: absolute;
+  right: 40rpx;
+  bottom: 40rpx;
+  background: gray;
+  opacity: 0.6;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  color: white;
+}
+.info{
+  padding: 20rpx;
+}
+.info .price{
+  color: orange;
+}
+.info .share-box{
+  display: flex;
+}
+.info .share-box .title{
+  margin-top: 8rpx;
+  font-size: 14px;
+}
+.info .share-box .share{
+  padding: 8rpx 0;
+  width: 100rpx;
+  background: white;
+  font-weight: normal;  
+}
+.info .share-box .share .icon-share{
+  font-size: 16px;
+}
+.nav-box .nav{
+  overflow: hidden;
+  /* width: 2000rpx; */
+}
+.nav-box .nav .item{
+  float: left;
+  width: 60px;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 2px solid #eee;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 30px;
+  border-radius: 20rpx;
+}
+.nav-box .nav .item.current{
+  color: gray;
+}
+.readmore{
+  margin-top: -16px;
+  padding: 20rpx 20rpx 110rpx;
+}
+
+.overview {
+  padding: 0 20rpx;
+}
+.overview text{
+  font-size: 14px;
+}
+
+.content {
+  font-size: 24rpx;
+}
+/* 超出3行隐藏多余部分并且显示省略号 */
+.hidden{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.readmore-tip {
+  color: #196a99;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+
+.text-box text{
+  font-size: 14px;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical; 
+  -webkit-line-clamp:1;  */
+}
+.bottom-nav{
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  background: white;
+  width: 100%;
+  border-top: solid 1px rgb(187, 182, 182);
+}
+.bottom-nav .icon{
+  flex: 0.5;
+  text-align: center;
+  font-size: 28rpx;
+  padding-top: 4rpx;
+}
+.bottom-nav .addCart{
+  flex: 1;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  background: #FFA900;
+  color: white;
+}
+.bottom-nav .buy{
+  flex: 1;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  background: #FE7302;
+  color: white;
+}

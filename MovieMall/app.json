@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/cart/cart",
+    "pages/my/my",
+   
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor": "#1296db",
+    "list":[{
+      "pagePath":"pages/home/home",
+      "text":"首页",
+      "iconPath":"/images/home0.png",
+      "selectedIconPath":"/images/home1.png"
+    },
+    {
+      "pagePath":"pages/cart/cart",
+      "text":"购物车",
+      "iconPath":"/images/cart0.png",
+      "selectedIconPath":"/images/cart1.png"
+    },
+    {
+      "pagePath":"pages/order/order",
+      "text":"订单",
+      "iconPath":"/images/order0.png",
+      "selectedIconPath":"/images/order1.png"
+    },
+    {
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath":"/images/user0.png",
+      "selectedIconPath":"/images/user1.png"
+    }
+  ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "宗宗影票",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
